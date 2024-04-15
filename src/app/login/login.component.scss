@@ -1,0 +1,57 @@
+body, html {
+    height: 100%; // Ensures the full height of the viewport
+    margin: 0; // Removes the default margin
+    display: flex; // Enables flexbox
+    justify-content: center; // Centers horizontally
+    align-items: center; // Centers vertically
+    background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwGFQFAfAoSj0Bo70GyXol6-M06F0hu7vVrw&s') no-repeat center center fixed; // Assuming you have the background image
+    background-size: cover;
+  }
+  
+  
+  .login-form {
+    max-width: 360px;
+    margin-top: 200px;
+    margin-left: 500px;
+    padding: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.3); // Gives a semi-transparent border
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.9); // Semi-transparent white background for the form
+    backdrop-filter: blur(10px); // Optional blur effect for enhanced readability
+  
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+  
+    input {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 20px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+  
+      &:focus {
+        border-color: #0056b3;
+        outline: none;
+        box-shadow: 0 0 0 2px rgba(0, 86, 179, 0.25);
+      }
+    }
+  
+    button {
+      width: 100%;
+      padding: 10px 15px;
+      font-size: 16px;
+      color: #fff;
+      background-color: #007bff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+  
+      &:hover {
+        background-color: #0056b3;
+      }
+    }
+  }
+  
